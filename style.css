@@ -1,0 +1,76 @@
+body {
+    background: cyan;
+    font-family: monospace;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    color: white;
+}
+
+.main>h1 {
+    font-size: 2.5rem;
+    color: linear-gradient(orange, white, green);
+    font-style: italic;
+    text-shadow: 1px 1px 10px black;
+    margin-bottom: 50px;
+}
+
+.main_border {
+    height: 60vh;
+    width: 30vw;
+    animation: fly 2s ease 0s infinite alternate;
+    border-left: 5px solid gray;
+}
+
+.main_border div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+}
+
+.orange {
+    background: orange;
+
+}
+
+.white {
+    background: #fff;
+}
+
+.white img {
+    animation: move 4s ease 0s infinite alternate;
+}
+
+.green {
+    background: green;
+}
+
+@keyframes fly {
+    0% {
+
+        transform: rotateY(0deg);
+    }
+
+    100% {
+
+        transform: rotateY(60deg);
+    }
+}
+
+.footer {
+    position: fixed;
+    right: 100px;
+    bottom: 50px;
+}
+
+.footer span {
+    font-weight: bold;
+    font-style: italic;
+}
